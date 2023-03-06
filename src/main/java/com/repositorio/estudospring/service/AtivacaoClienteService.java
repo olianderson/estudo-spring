@@ -1,11 +1,10 @@
 package com.repositorio.estudospring.service;
 
-import org.springframework.stereotype.Component;
 
 import com.repositorio.estudospring.model.Cliente;
 import com.repositorio.estudospring.notificacao.Notificador;
 
-@Component
+
 public class AtivacaoClienteService {
 
     private Notificador notificador;
