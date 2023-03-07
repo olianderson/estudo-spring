@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.repositorio.estudospring.model.Cliente;
 import com.repositorio.estudospring.service.AtivacaoClienteService;
 
+
 @Controller
 public class MeuPrimeiroController {
 
