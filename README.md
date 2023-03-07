@@ -10,7 +10,7 @@ Estudando os principais projetos do ecossistema Spring para desenvolvimento de R
 
 ## **🛠️ Features**
 
-- [ ] Spring e Injeção de Dependências
+- [x] Spring e Injeção de Dependências
 - [ ] JPA, Hibernate e Flyway
 - [ ] Spring Data JPA
 - [ ] Domain-Driven Design (DDD)
