@@ -13,7 +13,7 @@ import com.repositorio.estudospring.notificacao.TipoDoNotificador;
 @Component
 public class AtivacaoClienteService {
 
-    @TipoDoNotificador(NivelUrgencia.URGENTE)
+    @TipoDoNotificador(NivelUrgencia.SEM_URGENCIA)
     @Autowired
     private Notificador notificador;
 
