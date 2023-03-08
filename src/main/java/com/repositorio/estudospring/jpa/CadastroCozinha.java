@@ -20,9 +20,20 @@ public class CadastroCozinha {
 		return manager.createQuery("from Cozinha", Cozinha.class)
 				.getResultList();
 	}
+
+    // Equevalente a SELECT * FROM cozinha WHERE id=<id passado no método>
+    public Cozinha buscar(Long id) {
+        return manager.find(Cozinha.class, id);
+    }
 	
 	@Transactional
-	public Cozinha adicionar(Cozinha cozinha) {
+	public Cozinha salvar(Cozinha cozinha) {
+		cozinha = buscar(cozinha.getId());
 		return manager.merge(cozinha);
+	}
+
+	@Transactional
+	public void remover(Cozinha cozinha) {
+		manager.remove(cozinha);
 	}
 }
